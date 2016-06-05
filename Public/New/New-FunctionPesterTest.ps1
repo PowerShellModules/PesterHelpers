@@ -26,7 +26,7 @@ $parameters       = New-Object System.Collections.ArrayList
 
 $CommonParameters = (Get-Command Get-CommonParameter | Select-Object -ExpandProperty Parameters).Keys
 
-$functionParams   = $ResolvedFunction.Parameters
+$functionParams   = $ResolvedFunction.Parameters.Keys
 
 $tests            = "$OutPath$($ResolvedFunction.Verb)\$($ResolvedFunction.Name).Tests.ps1"
 Write-Verbose -Message "Full Output path is $tests"
