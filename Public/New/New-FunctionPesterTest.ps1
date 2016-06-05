@@ -47,7 +47,7 @@ Write-Verbose -Message "Added initial lines to the StringBuilder variable being 
 If ($functionParams.Count -gt 0)
 {
 
-$functionParams.Keys.Foreach({$parameters.Add($_)}) | Out-Null
+$functionParams.Foreach({$parameters.Add($_)}) | Out-Null
 
 $CommonParameters.Foreach({$parameters.Remove($_)}) | Out-Null
 Write-Verbose -Message "The Function $Function has $($parameters.Count) Non-Common Parameters"
