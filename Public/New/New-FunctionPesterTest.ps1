@@ -28,8 +28,9 @@ $CommonParameters = (Get-Command Get-CommonParameter | Select-Object -ExpandProp
 
 $functionParams   = $ResolvedFunction.Parameters.Keys
 
-$tests            = "$OutPath$($ResolvedFunction.Verb)\$($ResolvedFunction.Name).Tests.ps1"
-Write-Verbose -Message "Full Output path is $tests"
+$tests            = "$OutPath\$($ResolvedFunction.Verb)\$($ResolvedFunction.Name).Tests.ps1"
+$VerboseMessage = "Full Output path is $tests"
+Write-Verbose -Message $VerboseMessage
 $firstline        = '$function = Get-Command -Name'
 $firstline        = $firstline+' '+$($ResolvedFunction.Name)
 $sb.AppendLine($firstline) | Out-Null

@@ -4,6 +4,14 @@
         Exports a function from a module into a user given path
     .Description
         As synopsis
+    .PARAMETER Function
+    
+    Specifies the name of the parameter. The script returns the
+    descriptions of this parameter from the topics of cmdlets 
+    that have the parameter. The blank descriptions indicate that
+    the cmdlet help topic has the parameter, but the description
+    is blank.
+    
     .EXAMPLE
         Export-Function -Function Get-TwitterTweet -OutPath C:\TextFile\
         

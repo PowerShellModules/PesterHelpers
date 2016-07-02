@@ -12,7 +12,8 @@ function New-ModulePesterTest {
         #>
         [CmdletBinding(SupportsShouldProcess=$true)]
     Param (
-            [String]$ModuleName
+            [String]$ModuleName,
+            [String]$OutPath
           )
     if ($PSCmdlet.ShouldProcess($OutPath,"Creating Module Pester test File for $ModuleName"))
 {
