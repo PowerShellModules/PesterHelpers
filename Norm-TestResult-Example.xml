@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<test-results xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nunit_schema_2.5.xsd" name="Pester" total="164" errors="0" failures="0" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2016-07-20" time="19:30:53">
+  <environment user="Ryan" machine-name="LENOVO-10" cwd="GitHub:\PowerShellModules\PesterHelpers" user-domain="LENOVO-10" platform="Microsoft Windows 10 Pro|C:\WINDOWS|\Device\Harddisk0\Partition5" nunit-version="2.5.8.0" os-version="10.0.14393" clr-version="4.0.30319.42000" />
+  <culture-info current-culture="en-GB" current-uiculture="en-US" />
+  <test-suite type="Powershell" name="Pester" executed="True" result="Success" success="True" time="12.6243" asserts="0">
+    <results>
+      <test-suite type="TestFixture" name="Testing Private Function  - Get-CommonParameter for Standard Processing" executed="True" result="Success" success="True" time="0.1789" asserts="0" description="Testing Private Function  - Get-CommonParameter for Standard Processing">
+        <results>
+          <test-case description="Is valid Powershell (Has no script errors)" name="Testing Private Function  - Get-CommonParameter for Standard Processing.Is valid Powershell (Has no script errors)" time="0.1789" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Get-CommonParameter Tests" executed="True" result="Success" success="True" time="0.2927" asserts="0" description="Get-CommonParameter Tests">
+        <results>
+          <test-case description="Function Get-CommonParameter Has show-help comment block" name="Get-CommonParameter Tests.Function Get-CommonParameter Has show-help comment block" time="0.1817" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Get-CommonParameter Has show-help comment block has a.SYNOPSIS" name="Get-CommonParameter Tests.Function Get-CommonParameter Has show-help comment block has a.SYNOPSIS" time="0.0345" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Get-CommonParameter Has show-help comment block has an example" name="Get-CommonParameter Tests.Function Get-CommonParameter Has show-help comment block has an example" time="0.0419" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Get-CommonParameter Is an advanced function" name="Get-CommonParameter Tests.Function Get-CommonParameter Is an advanced function" time="0.0346" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Testing Public Function  - Export-AllModuleFunction for Standard Processing" executed="True" result="Success" success="True" time="0.0948" asserts="0" description="Testing Public Function  - Export-AllModuleFunction for Standard Processing">
+        <results>
+          <test-case description="Is valid Powershell (Has no script errors)" name="Testing Public Function  - Export-AllModuleFunction for Standard Processing.Is valid Powershell (Has no script errors)" time="0.0948" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Export-AllModuleFunction Tests" executed="True" result="Success" success="True" time="0.8989" asserts="0" description="Export-AllModuleFunction Tests">
+        <results>
+          <test-case description="Has a Parameter called Module" name="Export-AllModuleFunction Tests.Has a Parameter called Module" time="0.0872" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Module Parameter is Identified as Mandatory being True" name="Export-AllModuleFunction Tests.Module Parameter is Identified as Mandatory being True" time="0.027" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Module Parameter is of String Type" name="Export-AllModuleFunction Tests.Module Parameter is of String Type" time="0.0421" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Module Parameter is member of ParameterSets" name="Export-AllModuleFunction Tests.Module Parameter is member of ParameterSets" time="0.0288" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Module Parameter Position is defined correctly" name="Export-AllModuleFunction Tests.Module Parameter Position is defined correctly" time="0.0357" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Module Parameter Accept Pipeline Input?" name="Export-AllModuleFunction Tests.Does Module Parameter Accept Pipeline Input?" time="0.0313" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Module Parameter Accept Pipeline Input by PropertyName?" name="Export-AllModuleFunction Tests.Does Module Parameter Accept Pipeline Input by PropertyName?" time="0.0415" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Module Parameter use advanced parameter Validation? " name="Export-AllModuleFunction Tests.Does Module Parameter use advanced parameter Validation? " time="0.0408" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for Module " name="Export-AllModuleFunction Tests.Has Parameter Help Text for Module " time="0.0336" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has a Parameter called OutPath" name="Export-AllModuleFunction Tests.Has a Parameter called OutPath" time="0.0341" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is Identified as Mandatory being True" name="Export-AllModuleFunction Tests.OutPath Parameter is Identified as Mandatory being True" time="0.0473" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is of String Type" name="Export-AllModuleFunction Tests.OutPath Parameter is of String Type" time="0.0281" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is member of ParameterSets" name="Export-AllModuleFunction Tests.OutPath Parameter is member of ParameterSets" time="0.0412" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter Position is defined correctly" name="Export-AllModuleFunction Tests.OutPath Parameter Position is defined correctly" time="0.0342" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter Accept Pipeline Input?" name="Export-AllModuleFunction Tests.Does OutPath Parameter Accept Pipeline Input?" time="0.0375" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter Accept Pipeline Input by PropertyName?" name="Export-AllModuleFunction Tests.Does OutPath Parameter Accept Pipeline Input by PropertyName?" time="0.0305" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter use advanced parameter Validation? " name="Export-AllModuleFunction Tests.Does OutPath Parameter use advanced parameter Validation? " time="0.0452" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for OutPath " name="Export-AllModuleFunction Tests.Has Parameter Help Text for OutPath " time="0.0319" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Export-AllModuleFunction Has show-help comment block" name="Export-AllModuleFunction Tests.Function Export-AllModuleFunction Has show-help comment block" time="0.0744" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Export-AllModuleFunction Has show-help comment block has a.SYNOPSIS" name="Export-AllModuleFunction Tests.Function Export-AllModuleFunction Has show-help comment block has a.SYNOPSIS" time="0.0366" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Export-AllModuleFunction Has show-help comment block has an example" name="Export-AllModuleFunction Tests.Function Export-AllModuleFunction Has show-help comment block has an example" time="0.0426" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Export-AllModuleFunction Is an advanced function" name="Export-AllModuleFunction Tests.Function Export-AllModuleFunction Is an advanced function" time="0.0472" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Testing Public Function  - Export-Function for Standard Processing" executed="True" result="Success" success="True" time="0.0894" asserts="0" description="Testing Public Function  - Export-Function for Standard Processing">
+        <results>
+          <test-case description="Is valid Powershell (Has no script errors)" name="Testing Public Function  - Export-Function for Standard Processing.Is valid Powershell (Has no script errors)" time="0.0894" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Export-Function" executed="True" result="Success" success="True" time="0.4744" asserts="0" description="Export-Function">
+        <results>
+          <test-case description="Passes the Functional Mock" name="Export-Function.Passes the Functional Mock" time="0.1408" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Calls New-FunctionPesterTest" name="Export-Function.Calls New-FunctionPesterTest" time="0.0613" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Creates the required Objects" name="Export-Function.Creates the required Objects" time="0.0505" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Creates the New-FunctionPesterTest File" name="Export-Function.Creates the New-FunctionPesterTest File" time="0.0652" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Sets Content of the New-FunctionPesterTest File" name="Export-Function.Sets Content of the New-FunctionPesterTest File" time="0.0424" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Mocked Out-Null" name="Export-Function.Mocked Out-Null" time="0.0366" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Mocked Write-Verbose" name="Export-Function.Mocked Write-Verbose" time="0.0357" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Mocked everything correctly" name="Export-Function.Mocked everything correctly" time="0.0419" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Export-Function Tests" executed="True" result="Success" success="True" time="1.5392" asserts="0" description="Export-Function Tests">
+        <results>
+          <test-case description="Has a Parameter called Function" name="Export-Function Tests.Has a Parameter called Function" time="0.0922" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Parameter is Identified as Mandatory being True True" name="Export-Function Tests.Function Parameter is Identified as Mandatory being True True" time="0.0351" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Parameter is of String Type" name="Export-Function Tests.Function Parameter is of String Type" time="0.0407" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Parameter is member of ParameterSets" name="Export-Function Tests.Function Parameter is member of ParameterSets" time="0.0369" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Parameter Position is defined correctly" name="Export-Function Tests.Function Parameter Position is defined correctly" time="0.0333" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Function Parameter Accept Pipeline Input?" name="Export-Function Tests.Does Function Parameter Accept Pipeline Input?" time="0.0338" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Function Parameter Accept Pipeline Input by PropertyName?" name="Export-Function Tests.Does Function Parameter Accept Pipeline Input by PropertyName?" time="0.0341" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Function Parameter use advanced parameter Validation? " name="Export-Function Tests.Does Function Parameter use advanced parameter Validation? " time="0.0479" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for Function " name="Export-Function Tests.Has Parameter Help Text for Function " time="0.0333" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has a Parameter called ResolvedFunction" name="Export-Function Tests.Has a Parameter called ResolvedFunction" time="0.0338" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ResolvedFunction Parameter is Identified as Mandatory being True" name="Export-Function Tests.ResolvedFunction Parameter is Identified as Mandatory being True" time="0.0384" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ResolvedFunction Parameter is of Object Type" name="Export-Function Tests.ResolvedFunction Parameter is of Object Type" time="0.0316" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ResolvedFunction Parameter is member of ParameterSets" name="Export-Function Tests.ResolvedFunction Parameter is member of ParameterSets" time="0.0335" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ResolvedFunction Parameter Position is defined correctly" name="Export-Function Tests.ResolvedFunction Parameter Position is defined correctly" time="0.0393" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ResolvedFunction Parameter Accept Pipeline Input?" name="Export-Function Tests.Does ResolvedFunction Parameter Accept Pipeline Input?" time="0.0307" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ResolvedFunction Parameter Accept Pipeline Input by PropertyName?" name="Export-Function Tests.Does ResolvedFunction Parameter Accept Pipeline Input by PropertyName?" time="0.0437" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ResolvedFunction Parameter use advanced parameter Validation? " name="Export-Function Tests.Does ResolvedFunction Parameter use advanced parameter Validation? " time="0.037" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for ResolvedFunction " name="Export-Function Tests.Has Parameter Help Text for ResolvedFunction " time="0.0239" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has a Parameter called OutPath" name="Export-Function Tests.Has a Parameter called OutPath" time="0.0381" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is Identified as Mandatory being True True" name="Export-Function Tests.OutPath Parameter is Identified as Mandatory being True True" time="0.0352" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is of String Type" name="Export-Function Tests.OutPath Parameter is of String Type" time="0.0266" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is member of ParameterSets" name="Export-Function Tests.OutPath Parameter is member of ParameterSets" time="0.0405" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter Position is defined correctly" name="Export-Function Tests.OutPath Parameter Position is defined correctly" time="0.0355" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter Accept Pipeline Input?" name="Export-Function Tests.Does OutPath Parameter Accept Pipeline Input?" time="0.0312" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter Accept Pipeline Input by PropertyName?" name="Export-Function Tests.Does OutPath Parameter Accept Pipeline Input by PropertyName?" time="0.0375" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter use advanced parameter Validation? " name="Export-Function Tests.Does OutPath Parameter use advanced parameter Validation? " time="0.0435" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for OutPath " name="Export-Function Tests.Has Parameter Help Text for OutPath " time="0.034" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has a Parameter called PrivateFunction" name="Export-Function Tests.Has a Parameter called PrivateFunction" time="0.0341" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="PrivateFunction Parameter is Identified as Mandatory being False" name="Export-Function Tests.PrivateFunction Parameter is Identified as Mandatory being False" time="0.0374" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="PrivateFunction Parameter is of SwitchParameter Type" name="Export-Function Tests.PrivateFunction Parameter is of SwitchParameter Type" time="0.0319" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="PrivateFunction Parameter is member of ParameterSets" name="Export-Function Tests.PrivateFunction Parameter is member of ParameterSets" time="0.0437" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="PrivateFunction Parameter Position is defined correctly" name="Export-Function Tests.PrivateFunction Parameter Position is defined correctly" time="0.0301" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does PrivateFunction Parameter Accept Pipeline Input?" name="Export-Function Tests.Does PrivateFunction Parameter Accept Pipeline Input?" time="0.0466" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does PrivateFunction Parameter Accept Pipeline Input by PropertyName?" name="Export-Function Tests.Does PrivateFunction Parameter Accept Pipeline Input by PropertyName?" time="0.041" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does PrivateFunction Parameter use advanced parameter Validation? " name="Export-Function Tests.Does PrivateFunction Parameter use advanced parameter Validation? " time="0.0385" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for PrivateFunction " name="Export-Function Tests.Has Parameter Help Text for PrivateFunction " time="0.0371" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Export-Function Has show-help comment block" name="Export-Function Tests.Function Export-Function Has show-help comment block" time="0.0777" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Export-Function Has show-help comment block has a.SYNOPSIS" name="Export-Function Tests.Function Export-Function Has show-help comment block has a.SYNOPSIS" time="0.0305" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Export-Function Has show-help comment block has an example" name="Export-Function Tests.Function Export-Function Has show-help comment block has an example" time="0.0377" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Export-Function Is an advanced function" name="Export-Function Tests.Function Export-Function Is an advanced function" time="0.0317" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Testing Public Function  - New-FunctionFile for Standard Processing" executed="True" result="Success" success="True" time="0.0885" asserts="0" description="Testing Public Function  - New-FunctionFile for Standard Processing">
+        <results>
+          <test-case description="Is valid Powershell (Has no script errors)" name="Testing Public Function  - New-FunctionFile for Standard Processing.Is valid Powershell (Has no script errors)" time="0.0885" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="New-FunctionFile Tests" executed="True" result="Success" success="True" time="0.6128" asserts="0" description="New-FunctionFile Tests">
+        <results>
+          <test-case description="Has a Parameter called FunctionName" name="New-FunctionFile Tests.Has a Parameter called FunctionName" time="0.0946" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="FunctionName Parameter is Identified as Mandatory being False" name="New-FunctionFile Tests.FunctionName Parameter is Identified as Mandatory being False" time="0.0468" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="FunctionName Parameter is of Object Type" name="New-FunctionFile Tests.FunctionName Parameter is of Object Type" time="0.0311" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="FunctionName Parameter is member of ParameterSets" name="New-FunctionFile Tests.FunctionName Parameter is member of ParameterSets" time="0.0389" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="FunctionName Parameter Position is defined correctly" name="New-FunctionFile Tests.FunctionName Parameter Position is defined correctly" time="0.0428" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does FunctionName Parameter Accept Pipeline Input?" name="New-FunctionFile Tests.Does FunctionName Parameter Accept Pipeline Input?" time="0.0397" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does FunctionName Parameter Accept Pipeline Input by PropertyName?" name="New-FunctionFile Tests.Does FunctionName Parameter Accept Pipeline Input by PropertyName?" time="0.0503" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does FunctionName Parameter use advanced parameter Validation? " name="New-FunctionFile Tests.Does FunctionName Parameter use advanced parameter Validation? " time="0.0353" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for FunctionName " name="New-FunctionFile Tests.Has Parameter Help Text for FunctionName " time="0.0321" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-FunctionFile Has show-help comment block" name="New-FunctionFile Tests.Function New-FunctionFile Has show-help comment block" time="0.0825" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-FunctionFile Has show-help comment block has a.SYNOPSIS" name="New-FunctionFile Tests.Function New-FunctionFile Has show-help comment block has a.SYNOPSIS" time="0.0334" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-FunctionFile Has show-help comment block has an example" name="New-FunctionFile Tests.Function New-FunctionFile Has show-help comment block has an example" time="0.042" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-FunctionFile Is an advanced function" name="New-FunctionFile Tests.Function New-FunctionFile Is an advanced function" time="0.0432" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Testing Public Function  - New-FunctionPesterTest for Standard Processing" executed="True" result="Success" success="True" time="0.0829" asserts="0" description="Testing Public Function  - New-FunctionPesterTest for Standard Processing">
+        <results>
+          <test-case description="Is valid Powershell (Has no script errors)" name="Testing Public Function  - New-FunctionPesterTest for Standard Processing.Is valid Powershell (Has no script errors)" time="0.0829" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="New-FunctionPesterTest" executed="True" result="Success" success="True" time="0.3973" asserts="0" description="New-FunctionPesterTest">
+        <results>
+          <test-case description="Passes the Functional Mock" name="New-FunctionPesterTest.Passes the Functional Mock" time="0.1189" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Creates the required Objects" name="New-FunctionPesterTest.Creates the required Objects" time="0.0602" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Creates the Export-Function Pester Test File" name="New-FunctionPesterTest.Creates the Export-Function Pester Test File" time="0.0517" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Sets Content of the Export-Function Pester Test File" name="New-FunctionPesterTest.Sets Content of the Export-Function Pester Test File" time="0.0473" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Mocked Out-Null" name="New-FunctionPesterTest.Mocked Out-Null" time="0.0432" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Mocked Write-Verbose" name="New-FunctionPesterTest.Mocked Write-Verbose" time="0.0382" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Mocked everything correctly" name="New-FunctionPesterTest.Mocked everything correctly" time="0.0378" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="New-FunctionPesterTest Tests" executed="True" result="Success" success="True" time="1.5602" asserts="0" description="New-FunctionPesterTest Tests">
+        <results>
+          <test-case description="Has a Parameter called Function" name="New-FunctionPesterTest Tests.Has a Parameter called Function" time="0.0959" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Parameter is Identified as Mandatory being True True" name="New-FunctionPesterTest Tests.Function Parameter is Identified as Mandatory being True True" time="0.0376" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Parameter is of String Type" name="New-FunctionPesterTest Tests.Function Parameter is of String Type" time="0.033" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Parameter is member of ParameterSets" name="New-FunctionPesterTest Tests.Function Parameter is member of ParameterSets" time="0.0346" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function Parameter Position is defined correctly" name="New-FunctionPesterTest Tests.Function Parameter Position is defined correctly" time="0.0351" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Function Parameter Accept Pipeline Input?" name="New-FunctionPesterTest Tests.Does Function Parameter Accept Pipeline Input?" time="0.0337" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Function Parameter Accept Pipeline Input by PropertyName?" name="New-FunctionPesterTest Tests.Does Function Parameter Accept Pipeline Input by PropertyName?" time="0.0363" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does Function Parameter use advanced parameter Validation? " name="New-FunctionPesterTest Tests.Does Function Parameter use advanced parameter Validation? " time="0.0471" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for Function " name="New-FunctionPesterTest Tests.Has Parameter Help Text for Function " time="0.0336" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has a Parameter called ResolvedFunction" name="New-FunctionPesterTest Tests.Has a Parameter called ResolvedFunction" time="0.0314" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ResolvedFunction Parameter is Identified as Mandatory being True" name="New-FunctionPesterTest Tests.ResolvedFunction Parameter is Identified as Mandatory being True" time="0.0386" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ResolvedFunction Parameter is of Object Type" name="New-FunctionPesterTest Tests.ResolvedFunction Parameter is of Object Type" time="0.0305" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ResolvedFunction Parameter is member of ParameterSets" name="New-FunctionPesterTest Tests.ResolvedFunction Parameter is member of ParameterSets" time="0.0377" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ResolvedFunction Parameter Position is defined correctly" name="New-FunctionPesterTest Tests.ResolvedFunction Parameter Position is defined correctly" time="0.0379" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ResolvedFunction Parameter Accept Pipeline Input?" name="New-FunctionPesterTest Tests.Does ResolvedFunction Parameter Accept Pipeline Input?" time="0.0354" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ResolvedFunction Parameter Accept Pipeline Input by PropertyName?" name="New-FunctionPesterTest Tests.Does ResolvedFunction Parameter Accept Pipeline Input by PropertyName?" time="0.0406" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ResolvedFunction Parameter use advanced parameter Validation? " name="New-FunctionPesterTest Tests.Does ResolvedFunction Parameter use advanced parameter Validation? " time="0.0375" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for ResolvedFunction " name="New-FunctionPesterTest Tests.Has Parameter Help Text for ResolvedFunction " time="0.0333" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has a Parameter called OutPath" name="New-FunctionPesterTest Tests.Has a Parameter called OutPath" time="0.04" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is Identified as Mandatory being True True" name="New-FunctionPesterTest Tests.OutPath Parameter is Identified as Mandatory being True True" time="0.0312" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is of String Type" name="New-FunctionPesterTest Tests.OutPath Parameter is of String Type" time="0.0353" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is member of ParameterSets" name="New-FunctionPesterTest Tests.OutPath Parameter is member of ParameterSets" time="0.0408" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter Position is defined correctly" name="New-FunctionPesterTest Tests.OutPath Parameter Position is defined correctly" time="0.0348" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter Accept Pipeline Input?" name="New-FunctionPesterTest Tests.Does OutPath Parameter Accept Pipeline Input?" time="0.0363" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter Accept Pipeline Input by PropertyName?" name="New-FunctionPesterTest Tests.Does OutPath Parameter Accept Pipeline Input by PropertyName?" time="0.0313" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter use advanced parameter Validation? " name="New-FunctionPesterTest Tests.Does OutPath Parameter use advanced parameter Validation? " time="0.0474" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for OutPath " name="New-FunctionPesterTest Tests.Has Parameter Help Text for OutPath " time="0.0295" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has a Parameter called PrivateFunction" name="New-FunctionPesterTest Tests.Has a Parameter called PrivateFunction" time="0.0314" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="PrivateFunction Parameter is Identified as Mandatory being False" name="New-FunctionPesterTest Tests.PrivateFunction Parameter is Identified as Mandatory being False" time="0.0386" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="PrivateFunction Parameter is of SwitchParameter Type" name="New-FunctionPesterTest Tests.PrivateFunction Parameter is of SwitchParameter Type" time="0.0294" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="PrivateFunction Parameter is member of ParameterSets" name="New-FunctionPesterTest Tests.PrivateFunction Parameter is member of ParameterSets" time="0.0437" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="PrivateFunction Parameter Position is defined correctly" name="New-FunctionPesterTest Tests.PrivateFunction Parameter Position is defined correctly" time="0.0361" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does PrivateFunction Parameter Accept Pipeline Input?" name="New-FunctionPesterTest Tests.Does PrivateFunction Parameter Accept Pipeline Input?" time="0.0428" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does PrivateFunction Parameter Accept Pipeline Input by PropertyName?" name="New-FunctionPesterTest Tests.Does PrivateFunction Parameter Accept Pipeline Input by PropertyName?" time="0.0433" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does PrivateFunction Parameter use advanced parameter Validation? " name="New-FunctionPesterTest Tests.Does PrivateFunction Parameter use advanced parameter Validation? " time="0.0363" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for PrivateFunction " name="New-FunctionPesterTest Tests.Has Parameter Help Text for PrivateFunction " time="0.0359" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-FunctionPesterTest Has show-help comment block" name="New-FunctionPesterTest Tests.Function New-FunctionPesterTest Has show-help comment block" time="0.0686" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-FunctionPesterTest Has show-help comment block has a.SYNOPSIS" name="New-FunctionPesterTest Tests.Function New-FunctionPesterTest Has show-help comment block has a.SYNOPSIS" time="0.0351" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-FunctionPesterTest Has show-help comment block has an example" name="New-FunctionPesterTest Tests.Function New-FunctionPesterTest Has show-help comment block has an example" time="0.0431" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-FunctionPesterTest Is an advanced function" name="New-FunctionPesterTest Tests.Function New-FunctionPesterTest Is an advanced function" time="0.0398" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="Testing Public Function  - New-ModulePesterTest for Standard Processing" executed="True" result="Success" success="True" time="0.074" asserts="0" description="Testing Public Function  - New-ModulePesterTest for Standard Processing">
+        <results>
+          <test-case description="Is valid Powershell (Has no script errors)" name="Testing Public Function  - New-ModulePesterTest for Standard Processing.Is valid Powershell (Has no script errors)" time="0.074" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="New-ModulePesterTest Tests" executed="True" result="Success" success="True" time="0.9169" asserts="0" description="New-ModulePesterTest Tests">
+        <results>
+          <test-case description="Has a Parameter called ModuleName" name="New-ModulePesterTest Tests.Has a Parameter called ModuleName" time="0.0901" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ModuleName Parameter is Identified as Mandatory being False" name="New-ModulePesterTest Tests.ModuleName Parameter is Identified as Mandatory being False" time="0.0411" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ModuleName Parameter is of String Type" name="New-ModulePesterTest Tests.ModuleName Parameter is of String Type" time="0.0336" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ModuleName Parameter is member of ParameterSets" name="New-ModulePesterTest Tests.ModuleName Parameter is member of ParameterSets" time="0.036" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="ModuleName Parameter Position is defined correctly" name="New-ModulePesterTest Tests.ModuleName Parameter Position is defined correctly" time="0.03" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ModuleName Parameter Accept Pipeline Input?" name="New-ModulePesterTest Tests.Does ModuleName Parameter Accept Pipeline Input?" time="0.0393" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ModuleName Parameter Accept Pipeline Input by PropertyName?" name="New-ModulePesterTest Tests.Does ModuleName Parameter Accept Pipeline Input by PropertyName?" time="0.0332" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does ModuleName Parameter use advanced parameter Validation? " name="New-ModulePesterTest Tests.Does ModuleName Parameter use advanced parameter Validation? " time="0.0422" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for ModuleName " name="New-ModulePesterTest Tests.Has Parameter Help Text for ModuleName " time="0.0321" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has a Parameter called OutPath" name="New-ModulePesterTest Tests.Has a Parameter called OutPath" time="0.032" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is Identified as Mandatory being False" name="New-ModulePesterTest Tests.OutPath Parameter is Identified as Mandatory being False" time="0.0468" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is of String Type" name="New-ModulePesterTest Tests.OutPath Parameter is of String Type" time="0.0418" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter is member of ParameterSets" name="New-ModulePesterTest Tests.OutPath Parameter is member of ParameterSets" time="0.046" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="OutPath Parameter Position is defined correctly" name="New-ModulePesterTest Tests.OutPath Parameter Position is defined correctly" time="0.0388" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter Accept Pipeline Input?" name="New-ModulePesterTest Tests.Does OutPath Parameter Accept Pipeline Input?" time="0.0323" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter Accept Pipeline Input by PropertyName?" name="New-ModulePesterTest Tests.Does OutPath Parameter Accept Pipeline Input by PropertyName?" time="0.0352" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Does OutPath Parameter use advanced parameter Validation? " name="New-ModulePesterTest Tests.Does OutPath Parameter use advanced parameter Validation? " time="0.0555" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Has Parameter Help Text for OutPath " name="New-ModulePesterTest Tests.Has Parameter Help Text for OutPath " time="0.0307" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-ModulePesterTest Has show-help comment block" name="New-ModulePesterTest Tests.Function New-ModulePesterTest Has show-help comment block" time="0.0669" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-ModulePesterTest Has show-help comment block has a.SYNOPSIS" name="New-ModulePesterTest Tests.Function New-ModulePesterTest Has show-help comment block has a.SYNOPSIS" time="0.0362" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-ModulePesterTest Has show-help comment block has an example" name="New-ModulePesterTest Tests.Function New-ModulePesterTest Has show-help comment block has an example" time="0.0465" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Function New-ModulePesterTest Is an advanced function" name="New-ModulePesterTest Tests.Function New-ModulePesterTest Is an advanced function" time="0.0306" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+      <test-suite type="TestFixture" name="ScriptAnalyzer Rule Testing" executed="True" result="Success" success="True" time="5.3234" asserts="0" description="ScriptAnalyzer Rule Testing">
+        <results>
+          <test-case description="Passes the Script Analyzer " name="ScriptAnalyzer Rule Testing.Passes the Script Analyzer " time="5.238" asserts="0" success="True" result="Success" executed="True" />
+          <test-case description="Passes the Script Analyzer " name="ScriptAnalyzer Rule Testing.Passes the Script Analyzer " time="0.0854" asserts="0" success="True" result="Success" executed="True" />
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

@@ -1,8 +1,4 @@
-﻿$here = Split-Path -Parent $MyInvocation.MyCommand.Path
-$sut = (Split-Path -Leaf $MyInvocation.MyCommand.Path).Replace(".Functional.Tests.", ".")
-. "$here\$sut"
-
-Describe "New-FunctionPesterTest" {
+﻿Describe "New-FunctionPesterTest" {
 
         $FunctionValue = "Export-Function"
         $FunctionVerbValue = "Export"
