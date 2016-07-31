@@ -1,10 +1,12 @@
-Function New-FunctionFile {
-
+﻿function New-FunctionFile {
 <#
 .SYNOPSIS
    This is the Short Description field for $functionName
 .DESCRIPTION
    This is the Long Description field for $functionName
+
+.PARAMETER FunctionName
+
 .EXAMPLE
    New-FunctionFile -FunctionName Test-FunctionFile
 #>
@@ -23,10 +25,20 @@ Function $functionName {
 <#
 .SYNOPSIS
    This is the Short Description field for $functionName
+
 .DESCRIPTION
    This is the Long Description field for $functionName
+
+.PARAMETER FunctionName
+
+.PARAMETER FunctionName
+
+.PARAMETER FunctionName
+
+
 .EXAMPLE
    $functionName -Param1 -Param2
+
 .EXAMPLE
    Another example of how to use this cmdlet
 #>
@@ -63,4 +75,6 @@ Set-Content -Path .\$verb\$functionName.ps1 -Value $value -Encoding UTF8
 
 New-Item .\$verb\$functionName.Tests.ps1 -Force | Out-Null 
 }
+
 }
+
