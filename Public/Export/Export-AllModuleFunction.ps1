@@ -24,14 +24,14 @@
     Param
     (
         
-        [Parameter(Mandatory,
-                   ValueFromPipelineByPropertyName,
-                   ValueFromPipeline,
+        [Parameter(Mandatory=$true,
+                   ValueFromPipelineByPropertyName=$true,
+                   ValueFromPipeline=$true,
                    Position=0)]
         [String]
         $Module,
 
-        [Parameter(Mandatory)]
+        [Parameter(Mandatory=$true)]
         [String]
         $OutPath
     )

@@ -12,7 +12,7 @@
 RootModule = 'PesterHelpers.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.0.5'
+ModuleVersion = '0.0.6'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -120,7 +120,7 @@ PrivateData = @{
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = 'Small Bug fix to New-FunctionPesterTest'
+        ReleaseNotes = 'Updated to ensure compatability with Powershell V2'
 
         # External dependent modules of this module
         # ExternalModuleDependencies = ''

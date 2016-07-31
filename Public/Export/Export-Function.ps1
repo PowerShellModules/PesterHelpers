@@ -33,8 +33,8 @@
 [cmdletbinding(DefaultParameterSetName='Basic')]
 
 Param(
-    [Parameter(Mandatory=$true,ParameterSetName='Basic',ValueFromPipelineByPropertyName,ValueFromPipeline)]
-    [Parameter(Mandatory=$true,ParameterSetName='Passthru',ValueFromPipelineByPropertyName,ValueFromPipeline)]
+    [Parameter(Mandatory=$true,ParameterSetName='Basic',ValueFromPipelineByPropertyName=$true,ValueFromPipeline=$true)]
+    [Parameter(Mandatory=$true,ParameterSetName='Passthru',ValueFromPipelineByPropertyName=$true,ValueFromPipeline=$true)]
     [ValidateNotNullOrEmpty()]
     [ValidateNotNull()]
     [Alias('Command')]
