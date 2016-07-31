@@ -11,7 +11,7 @@
 
     This gets all Common Parameters into a Varaible to then be able to remove them from any automation of tests on Parameters
 #>
-[cmdletbinding(SupportsShouldProcess)]
+[cmdletbinding(SupportsShouldProcess=$true)]
 param()
 if ($PSCmdlet.ShouldProcess($null,$null)) { }
  
