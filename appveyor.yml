@@ -1,0 +1,36 @@
+# Custom Appveyor settings
+environment:
+  matrix:
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    PowerShellEdition: Desktop
+    Test: Full
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    PowerShellEdition: Core
+    Test: Full
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    PowerShellEdition: Desktop
+    Test: Norm
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    PowerShellEdition: Core
+    Test: Norm
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    PowerShellEdition: Desktop
+    Test: Min
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+    PowerShellEdition: Core
+    Test: Min
+
+matrix:
+  # immediately finish build on failure
+  fast_finish: true
+
+# Scripts that run after cloning
+install:
+  - ps: Install-Module -Name InvokeBuild, PowerShellGet, Pester, PSScriptAnalyzer -SkipPublisherCheck -Force
+build_script:
+  - ps: |
+      $ErrorActionPreference = 'Stop'
+      $buildScript = ".\build.ps1"
+      Invoke-Build -File $buildScript
+      #Compress-Archive -Path ".\bin\PesterHelpers\" -DestinationPath ".\PesterHelpers.zip"
+      #Push-AppveyorArtifact ".\PesterHelpers.zip"

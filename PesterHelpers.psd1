@@ -27,7 +27,7 @@ Author = 'Ryan Yates'
 CompanyName = 'PowerShellModules'
 
 # Copyright statement for this module
-Copyright = '? 2016 PowerShellModules'
+Copyright = '2016 PowerShellModules'
 
 # Description of the functionality provided by this module
 Description = 'PesterHelpers contains helper functions to help users move all their existing PowerShell Code in to seperate PowerShell ps1 files (for each function exported) whilst auto creating a Pester test for the exported function'
@@ -94,10 +94,10 @@ AliasesToExport = @()
 PrivateData = @{
 
     #BlogUrl of this module
-    BlogUrl = 'blog.kilasuit.org'
+    BlogUrl = 'https://blog.kilasuit.org'
 
     #UkPowerShellUserGroup of this module
-    UkPowerShellUserGroup = 'www.get-psuguk.org'
+    UkPowerShellUserGroup = 'http://www.get-psuguk.org'
 
     #Twitter of this module
     Twitter = '@ryanyates1990'
@@ -108,7 +108,7 @@ PrivateData = @{
     PSData = @{
 
         # Tags applied to this module. These help with module discovery in online galleries.
-        # Tags = @()
+        Tags = @('Desktop','Core')
 
         # A URL to the license for this module.
         LicenseUri = 'https://github.com/PowerShellModules/PesterHelpers/License'

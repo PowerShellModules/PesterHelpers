@@ -92,7 +92,7 @@ It 'Has a parameter called OutPath' {
 
 
 
-       It "Mocked everything correctly" { Assert-VerifiableMocks }
+       It "Mocked everything correctly" { Assert-VerifiableMock }
 
        
 

@@ -73,7 +73,7 @@
 
 
 
-       It "Mocked everything correctly" { Assert-VerifiableMocks }
+       It "Mocked everything correctly" { Assert-VerifiableMock }
 
        
  }

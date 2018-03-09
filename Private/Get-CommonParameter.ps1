@@ -1,6 +1,4 @@
 ﻿function Get-CommonParameter {
-
-
 <#
     .SYNOPSIS
         Helper Function to get all Common Parameters
@@ -14,8 +12,5 @@
 [cmdletbinding(SupportsShouldProcess=$true)]
 param()
 if ($PSCmdlet.ShouldProcess($null,$null)) { }
- 
-
-
 }
 
