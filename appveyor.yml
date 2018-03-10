@@ -4,19 +4,19 @@ environment:
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Desktop
     Test: Min
-  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
     PowerShellEdition: Core
     Test: Min
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Desktop
     Test: Full
-  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
     PowerShellEdition: Core
     Test: Full
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Desktop
     Test: Norm
-  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
+  - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
     PowerShellEdition: Core
     Test: Norm
 
@@ -33,5 +33,4 @@ build_script:
       $ErrorActionPreference = 'Stop'
       $buildScript = ".\build.ps1"
       Invoke-Build -File $buildScript
-      Compress-Archive -Path ".\bin\$Env:APPVEYOR_PROJECT_NAME" -DestinationPath ".\$Env:APPVEYOR_PROJECT_NAME.zip"
-      Push-AppveyorArtifact ".\$Env:APPVEYOR_PROJECT_NAME.zip"
+      
