@@ -27,7 +27,7 @@ matrix:
 
 # Scripts that run after cloning
 install:
-  - pwsh: Install-Module -Name InvokeBuild, PowerShellGet, Pester, PSScriptAnalyzer -SkipPublisherCheck -Force
+  - pwsh: Install-Module -Name InvokeBuild, PowerShellGet, Pester, PSScriptAnalyzer -SkipPublisherCheck -Force -AllowClobber
 build_script:
   - pwsh: |
       $ErrorActionPreference = 'Stop'
