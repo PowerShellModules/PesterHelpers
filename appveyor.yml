@@ -4,19 +4,19 @@ environment:
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Desktop
     Test: Min
-  - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Core
     Test: Min
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Desktop
     Test: Full
-  - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Core
     Test: Full
   - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Desktop
     Test: Norm
-  - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
+  - APPVEYOR_BUILD_WORKER_IMAGE: Visual Studio 2017
     PowerShellEdition: Core
     Test: Norm
 
