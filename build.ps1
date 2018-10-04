@@ -1,4 +1,4 @@
-Install-module InvokeBuild,Pester,PowerShellGet
+Install-module InvokeBuild,Pester,PowerShellGet -Scope CurrentUser
 <#>
 #Requires -Modules @{ModuleName='InvokeBuild';ModuleVersion='3.2.1'}
 #Requires -Modules @{ModuleName='PowerShellGet';ModuleVersion='1.6.0'}
