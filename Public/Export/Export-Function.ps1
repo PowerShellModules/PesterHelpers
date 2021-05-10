@@ -10,7 +10,7 @@
     This Parameter takes a String input and is used in Both Parameter Sets
 
 .PARAMETER ResolvedFunction
-    This Should -Be passed the Function that you want to work with as an object making use of the following
+    This should be passed the Function that you want to work with as an object making use of the following
     $ResolvedFunction = Get-Command "Command"
 
 .PARAMETER OutPath
