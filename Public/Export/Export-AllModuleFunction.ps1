@@ -7,7 +7,7 @@
    Exposes all Private and Public Functions and exports them to a location that you tell it to Export to & Creates a Basic Shell Pester Test for the Function
 
 .PARAMETER Module
-    This should be passed the Module Name as a single string - for example 'PesterHelpers'
+    This Should -Be passed the Module Name as a single string - for example 'PesterHelpers'
 
 .PARAMETER OutPath
     This is the location that you want to output all the module files to. It is recommended not to use the same location as where the module is installed.

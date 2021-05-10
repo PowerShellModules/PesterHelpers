@@ -15,7 +15,7 @@ Function New-FunctionPesterTest {
     This Parameter takes a String input and is used in Both Parameter Sets
     
 .PARAMETER ResolvedFunction
-    This should be passed the Function that you want to work with as an object making use of the following
+    This Should -Be passed the Function that you want to work with as an object making use of the following
     $ResolvedFunction = Get-Command "Command"
 
 .PARAMETER OutPath
@@ -122,35 +122,35 @@ If ($FunctionParams.Count -gt 0)  {
 foreach ($Parameter in $Parameters) {
     $ParamText = @'
         It 'Has a Parameter called $Parameter' {
-            $Function.Parameters.Keys.Contains('$Parameter') | Should Be 'True'
+            $Function.Parameters.Keys.Contains('$Parameter') | Should -Be 'True'
             }
         It '$Parameter Parameter is Identified as Mandatory being $MandatoryValue' {
-            [String]$Function.Parameters.$Parameter.Attributes.Mandatory | Should be $Mandatory
+            [String]$Function.Parameters.$Parameter.Attributes.Mandatory | Should -Be $Mandatory
             }
         It '$Parameter Parameter is of String Type' {
-            $Function.Parameters.$Parameter.ParameterType.FullName | Should be 'System.String'
+            $Function.Parameters.$Parameter.ParameterType.FullName | Should -Be 'System.String'
             }
         It '$Parameter Parameter is member of ParameterSets' {
-            [String]$Function.Parameters.$Parameter.ParameterSets.Keys | Should Be $ParamSets
+            [String]$Function.Parameters.$Parameter.ParameterSets.Keys | Should -Be $ParamSets
             }
         It '$Parameter Parameter Position is defined correctly' {
-            [String]$Function.Parameters.$Parameter.Attributes.Position | Should be $Positions
+            [String]$Function.Parameters.$Parameter.Attributes.Position | Should -Be $Positions
             }
         It 'Does $Parameter Parameter Accept Pipeline Input?' {
-            [String]$Function.Parameters.$Parameter.Attributes.ValueFromPipeline | Should be $ValueFromPipeline
+            [String]$Function.Parameters.$Parameter.Attributes.ValueFromPipeline | Should -Be $ValueFromPipeline
             }
         It 'Does $Parameter Parameter Accept Pipeline Input by PropertyName?' {
-            [String]$Function.Parameters.$Parameter.Attributes.ValueFromPipelineByPropertyName | Should be $PipelineByPropertyName
+            [String]$Function.Parameters.$Parameter.Attributes.ValueFromPipelineByPropertyName | Should -Be $PipelineByPropertyName
             }
         It 'Does $Parameter Parameter use advanced parameter Validation? ' {
-            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidateNotNullOrEmptyAttribute' | Should Be $VNNEAttribute
-            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidateNotNullAttribute' | Should Be $VNNAttribute
-            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidateScript' | Should Be $VSAttribute
-            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidateRangeAttribute' | Should Be $VRAttribute
-            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidatePatternAttribute' | Should Be $VRPattern
+            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidateNotNullOrEmptyAttribute' | Should -Be $VNNEAttribute
+            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidateNotNullAttribute' | Should -Be $VNNAttribute
+            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidateScript' | Should -Be $VSAttribute
+            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidateRangeAttribute' | Should -Be $VRAttribute
+            $Function.Parameters.$Parameter.Attributes.TypeID.Name -contains 'ValidatePatternAttribute' | Should -Be $VRPattern
             }
         It 'Has Parameter Help Text for $Parameter '{
-            $function.Definition.Contains('.PARAMETER $Parameter') | Should Be 'True'
+            $function.Definition.Contains('.PARAMETER $Parameter') | Should -Be 'True'
             }
 '@
 
@@ -200,25 +200,25 @@ $HelpTests = @'
 
             It "Function $($function.Name) Has show-help comment block" {
 
-                $function.Definition.Contains('<#') | should be 'True'
-                $function.Definition.Contains('#>') | should be 'True'
+                $function.Definition.Contains('<#') | Should -Be 'True'
+                $function.Definition.Contains('#>') | Should -Be 'True'
             }
 
             It "Function $($function.Name) Has show-help comment block has a.SYNOPSIS" {
 
-                $function.Definition.Contains('.SYNOPSIS') -or $function.Definition.Contains('.Synopsis') | should be 'True'
+                $function.Definition.Contains('.SYNOPSIS') -or $function.Definition.Contains('.Synopsis') | Should -Be 'True'
 
             }
 
             It "Function $($function.Name) Has show-help comment block has an example" {
 
-                $function.Definition.Contains('.EXAMPLE') | should be 'True'
+                $function.Definition.Contains('.EXAMPLE') | Should -Be 'True'
             }
 
             It "Function $($function.Name) Is an advanced function" {
 
-                $function.CmdletBinding | should be 'True'
-                $function.Definition.Contains('param') -or  $function.Definition.Contains('Param') | should be 'True'
+                $function.CmdletBinding | Should -Be 'True'
+                $function.Definition.Contains('param') -or  $function.Definition.Contains('Param') | Should -Be 'True'
             }
     
     }
