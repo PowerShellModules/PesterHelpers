@@ -13,7 +13,7 @@ Function New-FunctionPesterTest {
 
 .PARAMETER Function
     This Parameter takes a String input and is used in Both Parameter Sets
-    
+
 .PARAMETER ResolvedFunction
     This Should -Be passed the Function that you want to work with as an object making use of the following
     $ResolvedFunction = Get-Command "Command"
@@ -85,7 +85,7 @@ if ($PSCmdlet.ShouldProcess($OutPath,"Creating Pester test File for $Function"))
                                 $FunctionalTests = "$OutPath\$($ResolvedFunction.Verb)\Tests\$($ResolvedFunction.Name).Functional.Tests.ps1" }
     Elseif ($PrivateFunction) { $Tests = "$OutPath\Private\Tests\$Function.Tests.ps1"
                                 $FunctionalTests = "$OutPath\Private\Tests\$Function.Functional.Tests.ps1" }
-    
+
     $FunctionParams   = $ResolvedFunction.Parameters.Keys
 
 $VerboseMessage = "Full Output path is $Tests"
@@ -154,7 +154,7 @@ foreach ($Parameter in $Parameters) {
             }
 '@
 
-    
+
     $Mandatory = $($ResolvedFunction.Parameters[$parameter].Attributes.Mandatory)
     $Type      = $($ResolvedFunction.Parameters[$parameter].ParameterType.Name)
     $FullType  = $($ResolvedFunction.Parameters[$parameter].ParameterType.FullName)
@@ -175,7 +175,7 @@ foreach ($Parameter in $Parameters) {
     $ParamText = $ParamText.Replace('$VNNAttribute',"'$VNNAttribute'")
     $ParamText = $ParamText.Replace('$VSAttribute',"'$VSAttribute'")
     $ParamText = $ParamText.Replace('$VRAttribute',"'$VRAttribute'")
-    $ParamText = $ParamText.Replace('$VRPattern',"'$VRPattern'")  
+    $ParamText = $ParamText.Replace('$VRPattern',"'$VRPattern'")
     $ParamText = $ParamText.Replace('$Mandatory',"'$Mandatory'")
     $ParamText = $ParamText.Replace('$ParamSets',"'$ParamSets'")
     $ParamText = $ParamText.Replace('$Positions',"'$Positions'")
@@ -184,7 +184,7 @@ foreach ($Parameter in $Parameters) {
     $ParamText = $ParamText.Replace("String Type","$Type Type")
     $ParamText = $ParamText.Replace("System.String",$FullType)
 
-    
+
     $SB.AppendLine($ParamText) | Out-Null
 
     Write-Verbose -Message "Added the Parameter Pester Tests for the $Parameter Parameter"
@@ -220,7 +220,7 @@ $HelpTests = @'
                 $function.CmdletBinding | Should -Be 'True'
                 $function.Definition.Contains('param') -or  $function.Definition.Contains('Param') | Should -Be 'True'
             }
-    
+
     }
 '@
 

@@ -89,7 +89,7 @@
                 $function.CmdletBinding | Should -Be 'True'
                 $function.Definition.Contains('param') -or  $function.Definition.Contains('Param') | Should -Be 'True'
             }
-    
+
     }
 
  }
