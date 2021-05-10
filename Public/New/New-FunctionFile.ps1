@@ -12,13 +12,13 @@
 #>
 
 [Cmdletbinding(SupportsShouldProcess=$true)]
-param($FunctionName) 
+param($FunctionName)
 
 
 if ($PSCmdlet.ShouldProcess($OutPath,"Creating function & pester test Files for $Function"))
 {
-$verb = $functionName.split('-')[0] 
-New-Item .\$verb\$functionName.ps1 -Force | Out-Null 
+$verb = $functionName.split('-')[0]
+New-Item .\$verb\$functionName.ps1 -Force | Out-Null
 
 $value = @'
 Function $functionName {
@@ -73,8 +73,7 @@ Function $functionName {
 $value = $value.Replace('$functionName',$functionName)
 Set-Content -Path .\$verb\$functionName.ps1 -Value $value -Encoding UTF8
 
-New-Item .\$verb\$functionName.Tests.ps1 -Force | Out-Null 
+New-Item .\$verb\$functionName.Tests.ps1 -Force | Out-Null
 }
 
 }
-

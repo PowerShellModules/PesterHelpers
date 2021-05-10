@@ -23,7 +23,7 @@
     [Alias()]
     Param
     (
-        
+
         [Parameter(Mandatory=$true,
                    ValueFromPipelineByPropertyName=$true,
                    ValueFromPipeline=$true,
@@ -36,12 +36,12 @@
         $OutPath
     )
     $ModuleData = Get-Module $Module -Verbose:$VerbosePreference
-    
+
     If ($null -eq $ModuleData) {throw 'Please Import Module into session'}
     else {
-    Write-Verbose "$ModuleData" 
+    Write-Verbose "$ModuleData"
     $PublicFunctions = (Get-command -Module $module).Where{$_.CommandType -ne 'Cmdlet'}
-    
+
     Foreach ($PublicFunction in $PublicFunctions){
     Write-Verbose "Found $($PublicFunction.Name) being Exported"
     }
@@ -55,7 +55,7 @@
     }
 
     $PublicFunctions | ForEach-Object { Export-Function -Function $_.Name -ResolvedFunction $_ -OutPath $OutPath -Verbose:$VerbosePreference }
-    
+
     $PrivateFunctions | ForEach-Object { Export-Function -Function $_.Name -ResolvedFunction $_ -OutPath $OutPath -PrivateFunction -Verbose:$VerbosePreference }
     }
 }

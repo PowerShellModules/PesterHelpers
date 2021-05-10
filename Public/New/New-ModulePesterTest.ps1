@@ -13,7 +13,7 @@ As synopsis
 .EXAMPLE
 New-ModulePesterTests -ModuleName SPCSPS
 
-This will get the SPCSPS module and the path that is asocciated with it and then create a ps1 file that contains a base level of Pester Tests         
+This will get the SPCSPS module and the path that is asocciated with it and then create a ps1 file that contains a base level of Pester Tests
 #>
 [CmdletBinding(SupportsShouldProcess=$true)]
 Param (
@@ -28,10 +28,10 @@ Param (
 
     New-Item -Path "$OutPath\$ModuleName.Full.Tests.ps1" -ItemType File -Force | Out-Null
     Set-Content -Path "$OutPath\$ModuleName.Full.Tests.ps1" -Value $FullModulePesterTests -Encoding UTF8 | Out-Null
-    
+
     New-Item -Path "$OutPath\$ModuleName.Norm.Tests.ps1" -ItemType File -Force | Out-Null
     Set-Content -Path "$OutPath\$ModuleName.Norm.Tests.ps1" -Value $NormModulePesterTests -Encoding UTF8 | Out-Null
-    
+
     New-Item -Path "$OutPath\$ModuleName.Min.Tests.ps1" -ItemType File -Force | Out-Null
     Set-Content -Path "$OutPath\$ModuleName.Min.Tests.ps1" -Value $MinModulePesterTests -Encoding UTF8 | Out-Null
     }
